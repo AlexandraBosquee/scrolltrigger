@@ -1,0 +1,12 @@
+@media (min-width: 768px) { 
+    #resolution {
+    
+        background-color:coral;
+        
+      }
+      
+      #resolution::after{
+        content: "MD > 768  <=992";
+      }
+    
+ }

@@ -1,0 +1,236 @@
+/*font-family: 'Unbounded', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+#resolution {
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: cadetblue;
+  text-align: center;
+}
+
+#resolution::after{
+  content: "< 576";
+}
+
+body {
+  background-color: #0e2cd5;
+  overflow-x: hidden;
+}
+header {
+  position: fixed !important;
+  max-width: 1326px;
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 30px 0;
+  width: 100%;
+  justify-content: space-between !important;
+
+
+  .navbar-brand {
+    font-family: 'Unbounded', cursive;
+
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  a {
+    color: white !important;
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+    margin-left: 30%;
+  }
+  .navbar-dark .navbar-toggler {
+    border: none !important;
+  }
+
+  .navbar-toggler-icon {
+    color: white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    
+  }
+
+  li {
+    padding: 0 15px;
+  }
+}
+
+
+h1, h2  {
+ 
+  color: white;
+  font-family: 'Unbounded', cursive;
+}
+
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+
+  h1, h2  {
+    font-size: 8rem;
+
+  }
+
+
+    h1 {
+      margin-right: 30%;
+    }
+
+    h2 {
+      margin-left: 30%;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    p {
+      color: white;
+      font-size: 1.5rem;
+      width: 50%;
+      margin-left: 30%;
+    }
+    .contact {
+      font-family: 'Unbounded', cursive;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      width: fit-content;
+      margin-left: 30%;
+      margin-top: 50px;
+      position: relative;
+    
+      &::after{
+        content: url('/img/btn-arrow-white-next.svg');
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: -60px;
+        top: calc(50% - 20px) ;
+      }
+      
+      &:hover {
+        color: rgba(255, 255, 255, 0.7 );
+      }
+    }
+
+
+}
+
+
+.tailleur{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .titre {
+    width: 45%;
+  }
+
+  .texte{
+    width: 50%;
+  }
+
+  p {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.7);
+
+  }
+}
+
+.skills {
+  margin-bottom: 12.5rem;
+  position: relative;
+}
+
+.skills .skills-word-line {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.skills .skills-word-line .skills-word {
+ 
+  font-size: 8rem;
+  -webkit-text-stroke: 3px rgba(255, 255, 255, 0.8);
+  -webkit-text-fill-color: transparent;
+  transition: all linear .3;
+}
+
+.skills .skills-word-line .skills-separator {
+  margin: 0 1rem;
+ 
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.confiance {
+
+  background-color: white;
+
+  h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0 auto;
+  
+  }
+
+  .partenaire {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    margin: 150px 0;
+
+    img {
+      width: 50%;
+      margin-right: 20px;
+ 
+    }
+
+    .droite {
+      margin-left: calc(45% - 20px) ;
+      margin-right: 20px;
+
+    }
+
+  
+
+    h4 {
+      font-size: 4rem;
+      font-family: 'Unbounded', cursive;
+    }
+
+    .red {
+      color: #D90E2A;
+    }
+    p {
+      font-size: 1.2rem;
+      color: grey;
+      font-family: 'Montserrat';
+    }
+  }
+}

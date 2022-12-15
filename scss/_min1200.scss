@@ -1,0 +1,11 @@
+@media (min-width: 1200px) { 
+    #resolution {
+    
+        background-color:rgb(94, 94, 168);
+        
+      }
+      
+      #resolution::after{
+        content: "XL > 1200  <=1400";
+      }
+ }

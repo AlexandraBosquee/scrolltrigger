@@ -1,0 +1,11 @@
+@media (min-width: 576px) { 
+    #resolution {
+    
+        background-color:burlywood;
+        
+      }
+      
+      #resolution::after{
+        content: "S > 576  <=768";
+      }
+ }

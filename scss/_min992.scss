@@ -1,0 +1,12 @@
+@media (min-width: 992px) { 
+    #resolution {
+    
+        background-color:cornflowerblue;
+        
+      }
+      
+      #resolution::after{
+        content: "L > 992  <=1200";
+      }
+    
+ }
